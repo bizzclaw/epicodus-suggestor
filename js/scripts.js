@@ -22,7 +22,7 @@ $(document).ready(function() {
 	// 1. Name Form
 	$("#form-name").submit(function(event) {
 		event.preventDefault();
-		name = $("#input-name").val();
+		userName = $("#input-name").val();
 		fadeSwap("#questions-initial")
 	});
 
