@@ -31,7 +31,7 @@
 				</div>
 			</div>
 			<!--Question 2: Design or backend-->
-			<div class="panel panel-default" id = "questions-initial">
+			<div class="panel panel-default hide" id = "questions-initial">
 				<div class="panel-heading">
 					<h1 class="panel-title"><strong>Front end or back end</strong></h1>
 					<p>What do you think is more interesting in terms of web development?</p>
@@ -47,7 +47,7 @@
 						<div class="radio">
 						  <label>
 						    <input type="radio" name="optionsRadios" id="input-design" value="design">
-						    The way the suer interacts with and experiences the website; how it looks and navigates.
+						    The way the user interacts with and experiences the website; how it looks and navigates.
 						  </label>
 						</div>
 						<button class="btn btn-default submit">Continue</button>
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 			<!--question 3: Webdev or other?-->
-			<div class="panel panel-default" id = "questions-weborother">
+			<div class="panel panel-default hide" id = "questions-weborother">
 				<div class="panel-heading">
 					<h1 class="panel-title"><strong>Just webdev?</strong></h1>
 					<p>Other than web development, do you have any interest in other areas of programming?</p>
@@ -90,8 +90,8 @@
 					</form>
 				</div>
 			</div>
-			<!--Question 3: Web Pages or Web Sites-->
-			<div class="panel panel-default" id = "questions-pageorsite">
+			<!--Question : Web Pages or Web Sites-->
+			<div class="panel panel-default hide" id = "questions-pageorsite">
 				<div class="panel-heading">
 					<h1 class="panel-title"><strong>Web pages or websites?</strong></h1>
 					<p>Are you more itnerested in programming for individual pages, or the site as a whole?</p>
@@ -114,7 +114,30 @@
 					</form>
 				</div>
 			</div>
-
+			<!--Question 5: Apps or sites?-->
+			<div class="panel panel-default hide" id = "questions-apporsite">
+				<div class="panel-heading">
+					<h1 class="panel-title"><strong>Apps or Sites?</strong></h1>
+					<p>Are you more interested in building applications or websites?</p>
+				</div>
+				<div class="panel-body">
+					<form id ="form-name">
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="input-makesites" value="makesites" checked>
+								I'm more interested in building websites.
+						  </label>
+						</div>
+						<div class="radio">
+						  <label>
+						    <input type="radio" name="optionsRadios" id="input-makeapps" value="makeapps">
+						    I'm more interested in building applications.
+						  </label>
+						</div>
+						<button class="btn btn-default submit">Continue</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
