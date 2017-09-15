@@ -1,12 +1,12 @@
 $(document).ready(function() {
-	var name = "";
+	var userName = "";
 
 	var fadetime = 700;
 	//**Backend functions**//
 	var displayOutput = function(title, description) {
 		fadeSwap("#output");
 		$("#output-title").text(title);
-		$("#output-thankyou").text("Thank you "+name+", we can't wait to hear from you.")
+		$("#output-thankyou").text("Thank you "+userName+", we can't wait to hear from you.")
 		$("#output-description").text(description);
 	};
 
