@@ -2,10 +2,11 @@ $(document).ready(function() {
 	var name = "";
 
 	var fadetime = 700;
-
+	//**Backend functions**//
 	var displayOutput = function(title, description) {
 		fadeSwap("#output");
 		$("#output-title").text(title);
+		$("#output-thankyou").text("Thank you "+name+", we can't wait to hear from you.")
 		$("#output-description").text(description);
 	};
 
@@ -16,8 +17,9 @@ $(document).ready(function() {
 		}, fadetime)
 	};
 
+	//**Forms**//
 	$("#questions-name").fadeIn(fadetime);
-	// 2. Name Form
+	// 1. Name Form
 	$("#form-name").submit(function(event) {
 		event.preventDefault();
 		name = $("#input-name").val();
@@ -48,7 +50,7 @@ $(document).ready(function() {
 		} else if (selected === "apps"){
 			fadeSwap("#questions-apporsite");
 		} else if (selected === "mobile") {
-			displayOutput("Java Track", "Java has a wide set of applications in everything (except games). It is especially used for writing the backend of websites, mobile interfaces, and many other types of applications.");
+			displayOutput("Java Track", "Java has a wide set of applications in everything. It is especially used for writing the backend of websites, mobile interfaces, and many other types of applications.");
 		}	else if (selected === "webdev") {
 			fadeSwap("#questions-pageorsite");
 		}
