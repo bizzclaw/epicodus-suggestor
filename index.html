@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Epicodus Track suggestor</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 		<!--Stylesheet-->
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/styles.css">
@@ -40,13 +41,13 @@
 					<form id ="form-initial">
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-backend" value="backend" checked>
+						    <input type="radio" name="radio-initial" id="input-backend" value="backend" checked>
 								The way a website stores information, processes information and operates behind the scenes.
 						  </label>
 						</div>
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-design" value="design">
+						    <input type="radio" name="radio-initial" id="input-design" value="design">
 						    The way the user interacts with and experiences the website; how it looks and navigates.
 						  </label>
 						</div>
@@ -64,25 +65,25 @@
 					<form id ="form-weborother">
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-games" value="games" checked>
+						    <input type="radio" name="radio-weborother" id="input-games" value="games" checked>
 								Video Game related
 						  </label>
 						</div>
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-apps" value="apps">
+						    <input type="radio" name="radio-weborother" id="input-apps" value="apps">
 						    Enterprise Applications
 						  </label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="input-mobile" value="mobile">
+								<input type="radio" name="radio-weborother" id="input-mobile" value="mobile">
 								Mobile Development
 							</label>
 						</div>
 						<div class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="input-webdev" value="webdev">
+								<input type="radio" name="radio-weborother" id="input-webdev" value="webdev">
 								Just Websites
 							</label>
 						</div>
@@ -100,13 +101,13 @@
 					<form id ="form-pageorsite">
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-pages" value="pages" checked>
+						    <input type="radio" name="radio-pageorsite" id="input-pages" value="pages" checked>
 								Individual pages
 						  </label>
 						</div>
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-wholesite" value="wholesite">
+						    <input type="radio" name="radio-pageorsite" id="input-wholesite" value="wholesite">
 						    The Website as a whole
 						  </label>
 						</div>
@@ -124,13 +125,13 @@
 					<form id ="form-apporsite">
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-makesites" value="makesites" checked>
+						    <input type="radio" name="radio-apporsite" id="input-makesites" value="makesites" checked>
 								I'm more interested in building websites.
 						  </label>
 						</div>
 						<div class="radio">
 						  <label>
-						    <input type="radio" name="optionsRadios" id="input-makeapps" value="makeapps">
+						    <input type="radio" name="radio-apporsite" id="input-makeapps" value="makeapps">
 						    I'm more interested in building applications.
 						  </label>
 						</div>
@@ -138,6 +139,18 @@
 					</form>
 				</div>
 			</div>
+
+			<div class="panel panel-default" id = "output">
+				<div class="panel-heading">
+					<h1 class="panel-title"><span id = "output-title"></span></h1>
+				</div>
+				<div class="panel-body">
+					<p id = "output-descriptions"></p>
+					<button type="button" class="btn btn-success" id="reset">Try More Options</button>
+					<a href="https://www.epicodus.com/apply/"><button type="button" class="btn btn-info">Apply Today</button></a>
+				</div>
+			</div>
+
 		</div>
 	</body>
 </html>
